@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", serif;
+}
+body{
+  background-color: #e3f2fd;
+}
+.container{
+  margin: 85px auto 0;
+  padding: 25px;
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-field{
+  position: relative;
+  height: 64px;
+  width: 100%;
+}
+.input-field textarea{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 8px;
+  padding: 18px 45px 18px 15px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+textarea::-webkit-scrollbar{
+  display: none;
+}
+.input-field .note-icon{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 24px;
+  color: #707070;
+}
+.input-field textarea:focus ~ .note-icon{
+  color: #4070f4;
+}
+
+.todoLists{
+  margin-top: 20px;
+}
+.list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  background-color: #f2f2f2;
+  padding: 20px 15px;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.task{
+  margin: 0 60px 0 18px;
+  word-break: break-all;
+}
+.todoLists .list input{
+  height: 16px;
+  width: 16px;
+}
+.list input:checked ~ .task{
+  text-decoration: line-through;
+}
+
+.todoLists .list i{
+  position: absolute;
+  bottom: -5%;
+  right: 20px;
+  transform: translateY(-50%);
+  pointer-events: auto;
+  font-size: 24px;
+  color: #707070;
+  
+}
+.todoLists .list i:hover{
+  opacity: 1;
+} 
+.pending-tasks{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.pending-tasks span{
+  color: #333;
+}
+.clear-button{
+  padding: 6px 12px;
+  border: none;
+  background: #4070f4;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clear-button:hover{
+  background-color: #0e4bf1;
+}
+
